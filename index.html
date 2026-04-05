@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gasista Matriculado Ushuaia | Soluciones Integrales de Gas</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Open+Sans:wght@400;600&display=swap');
+        
+        :root {
+            --dark-green: #1E8449;
+            --light-green: #2ECC71;
+            --dark-gray: #2C3E50;
+        }
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        h1, h2, h3, h4, .font-heading {
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .hero-gradient {
+            background: linear-gradient(135deg, rgba(44, 62, 80, 0.95) 0%, rgba(30, 132, 73, 0.85) 100%), 
+                        url('https://images.unsplash.com/photo-1581094288338-2314dddb7bc3?auto=format&fit=crop&q=80&w=1920');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .service-card {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+
+        .whatsapp-float {
+            position: fixed;
+            bottom: 25px;
+            right: 25px;
+            z-index: 100;
+            animation: pulse-green 2s infinite;
+        }
+
+        @keyframes pulse-green {
+            0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(46, 204, 113, 0.7); }
+            70% { transform: scale(1.05); box-shadow: 0 0 0 15px rgba(46, 204, 113, 0); }
+            100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(46, 204, 113, 0); }
+        }
+
+        .input-focus:focus {
+            border-color: #1E8449;
+            box-shadow: 0 0 0 3px rgba(30, 132, 73, 0.2);
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900">
+
+    <!-- Botón Flotante de WhatsApp -->
+    <a href="https://wa.me/5492901601196" target="_blank" class="whatsapp-float bg-[#25d366] text-white w-16 h-16 rounded-full flex items-center justify-center text-3xl shadow-xl hover:scale-110 transition-transform">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Barra de Información Superior -->
+    <div class="bg-[#2C3E50] text-white py-2 px-6 hidden md:block">
+        <div class="max-w-7xl mx-auto flex justify-between items-center text-xs font-bold uppercase tracking-wider">
+            <div class="flex gap-6">
+                <span><i class="fas fa-certificate text-[#2ECC71] mr-2"></i> Habilitación Camuzzi & AFIP</span>
+                <span><i class="fas fa-star text-[#2ECC71] mr-2"></i> Presupuestos en el día</span>
+            </div>
+            <div>
+                <a href="tel:+542901601196" class="hover:text-[#2ECC71] transition-colors"><i class="fas fa-phone-alt mr-2"></i> 2901-601196</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navegación -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <div class="bg-[#1E8449] p-2 rounded-lg">
+                    <i class="fas fa-fire-alt text-white text-2xl"></i>
+                </div>
+                <div>
+                    <span class="block font-black text-xl leading-none text-[#2C3E50] italic tracking-tighter">GASISTA <span class="text-[#1E8449]">USHUAIA</span></span>
+                    <span class="text-[9px] font-bold text-slate-400 uppercase tracking-widest leading-none">Soluciones Habilitadas</span>
+                </div>
+            </div>
+            <div class="hidden md:flex gap-8 items-center font-bold text-xs uppercase tracking-widest text-slate-600">
+                <a href="#empresa" class="hover:text-[#1E8449] transition-colors">Nosotros</a>
+                <a href="#servicios" class="hover:text-[#1E8449] transition-colors">Servicios</a>
+                <a href="#llave-en-mano" class="hover:text-[#1E8449] transition-colors">Llave en Mano</a>
+                <a href="#contacto" class="bg-[#1E8449] text-white px-6 py-3 rounded-full hover:bg-[#2ECC71] transition-all shadow-md">Contacto Rápido</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sección Hero -->
+    <header class="hero-gradient min-h-[85vh] flex items-center text-white relative">
+        <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center w-full">
+            <div class="space-y-6">
+                <div class="inline-block bg-[#2ECC71] text-[#2C3E50] px-4 py-1 rounded-full text-[10px] font-black uppercase tracking-widest">
+                    Empresa Especializada en Ushuaia
+                </div>
+                <h1 class="text-5xl lg:text-7xl font-black italic uppercase leading-[1.1]">
+                    Calor Seguro y <span class="text-[#2ECC71]">Habilitado</span>.
+                </h1>
+                <p class="text-lg text-slate-200 max-w-lg font-light leading-relaxed">
+                    Brindamos soluciones completas según normativa vigente. Nos encargamos de todo para que no tengas que preocuparte por trámites o gestiones ante Camuzzi.
+                </p>
+                <div class="flex flex-wrap gap-4 pt-4">
+                    <a href="#contacto" class="bg-[#2ECC71] text-[#2C3E50] font-black px-8 py-4 rounded-xl shadow-xl hover:scale-105 transition-transform flex items-center gap-3">
+                        PEDIR PRESUPUESTO <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#servicios" class="border border-white/30 bg-white/5 backdrop-blur-sm px-8 py-4 rounded-xl font-bold hover:bg-white/10 transition-all">Ver Servicios</a>
+                </div>
+            </div>
+            <div class="hidden lg:grid grid-cols-2 gap-4 relative">
+                <div class="space-y-4">
+                    <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&q=80&w=400" class="rounded-2xl shadow-xl border border-white/10 h-64 w-full object-cover" alt="Obra de gas">
+                    <div class="bg-white/10 backdrop-blur-md p-6 rounded-2xl border border-white/20">
+                        <p class="text-3xl font-black text-[#2ECC71]">100%</p>
+                        <p class="text-[10px] uppercase font-bold tracking-widest">Obras Aprobadas</p>
+                    </div>
+                </div>
+                <div class="space-y-4 pt-12">
+                    <div class="bg-[#2ECC71] p-6 rounded-2xl text-[#2C3E50]">
+                        <i class="fas fa-clipboard-check text-2xl mb-2"></i>
+                        <p class="font-black text-sm uppercase">Matrícula Nacional</p>
+                    </div>
+                    <img src="https://images.unsplash.com/photo-1621905251918-48416bd8575a?auto=format&fit=crop&q=80&w=400" class="rounded-2xl shadow-xl border border-white/10 h-64 w-full object-cover" alt="Instalación">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sección Empresa -->
+    <section id="empresa" class="py-24 bg-white">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div>
+                    <h2 class="text-4xl font-black text-[#2C3E50] uppercase italic mb-6">¿Por qué elegirnos?</h2>
+                    <div class="h-1.5 w-20 bg-[#2ECC71] mb-8"></div>
+                    <p class="text-slate-600 text-lg leading-relaxed mb-6">
+                        Somos una empresa especializada en instalaciones de gas en Ushuaia, brindando soluciones completas, seguras y habilitadas según normativa vigente.
+                    </p>
+                    <p class="text-slate-600 text-lg leading-relaxed mb-8">
+                        Trabajamos de manera profesional y contamos con <strong>habilitación y registro ante Camuzzi Gas del Sur y AFIP</strong>, lo que garantiza que cada trabajo cumple con los requisitos necesarios para su aprobación.
+                    </p>
+                    <ul class="space-y-4">
+                        <li class="flex items-center gap-3 font-bold text-slate-700">
+                            <i class="fas fa-check text-[#2ECC71]"></i> Atención rápida y personalizada
+                        </li>
+                        <li class="flex items-center gap-3 font-bold text-slate-700">
+                            <i class="fas fa-check text-[#2ECC71]"></i> Presupuestos sin demora
+                        </li>
+                        <li class="flex items-center gap-3 font-bold text-slate-700">
+                            <i class="fas fa-check text-[#2ECC71]"></i> Trabajos seguros y habilitados
+                        </li>
+                        <li class="flex items-center gap-3 font-bold text-slate-700">
+                            <i class="fas fa-check text-[#2ECC71]"></i> Amplia experiencia en el rubro
+                        </li>
+                    </ul>
+                </div>
+                <div class="bg-slate-50 p-8 rounded-[2rem] border border-slate-100">
+                    <h3 class="font-black uppercase text-[#2C3E50] mb-6 tracking-tighter">Trabajamos con Particulares y Constructoras</h3>
+                    <p class="text-slate-500 mb-8">Adaptándonos a cada proyecto con responsabilidad, cumplimiento y rapidez.</p>
+                    <div class="space-y-4">
+                        <div class="flex items-center gap-4 bg-white p-4 rounded-xl shadow-sm">
+                            <div class="w-10 h-10 bg-slate-100 rounded-lg flex items-center justify-center text-[#1E8449]">
+                                <i class="fas fa-home"></i>
+                            </div>
+                            <span class="font-bold text-sm uppercase">Viviendas Particulares</span>
+                        </div>
+                        <div class="flex items-center gap-4 bg-white p-4 rounded-xl shadow-sm">
+                            <div class="w-10 h-10 bg-slate-100 rounded-lg flex items-center justify-center text-[#1E8449]">
+                                <i class="fas fa-building"></i>
+                            </div>
+                            <span class="font-bold text-sm uppercase">Obras en Construcción</span>
+                        </div>
+                        <div class="flex items-center gap-4 bg-white p-4 rounded-xl shadow-sm">
+                            <div class="w-10 h-10 bg-slate-100 rounded-lg flex items-center justify-center text-[#1E8449]">
+                                <i class="fas fa-hard-hat"></i>
+                            </div>
+                            <span class="font-bold text-sm uppercase">Empresas Constructoras</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cuadrícula de Servicios -->
+    <section id="servicios" class="py-24 bg-slate-100">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-black text-[#2C3E50] uppercase italic tracking-tighter">🧰 Nuestros Servicios</h2>
+                <p class="text-slate-500 font-bold uppercase text-[10px] tracking-[0.3em] mt-2">Servicio Integral para Gas Domiciliario e Industrial</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Ítem -->
+                <div class="service-card bg-white p-8 rounded-3xl border-t-4 border-[#2ECC71]">
+                    <div class="w-14 h-14 bg-slate-50 rounded-2xl flex items-center justify-center mb-6 text-2xl text-[#1E8449]">
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <h3 class="font-black uppercase text-sm mb-4">Instalaciones Nuevas</h3>
+                    <p class="text-xs text-slate-500 leading-relaxed">Diseño y ejecución de cañerías para obras desde cero con materiales aprobados y conexión a red.</p>
+                </div>
+                <!-- Ítem -->
+                <div class="service-card bg-white p-8 rounded-3xl border-t-4 border-[#2ECC71]">
+                    <div class="w-14 h-14 bg-slate-50 rounded-2xl flex items-center justify-center mb-6 text-2xl text-[#1E8449]">
+                        <i class="fas fa-broom"></i>
+                    </div>
+                    <h3 class="font-black uppercase text-sm mb-4">Limpieza y Mantenimiento</h3>
+                    <p class="text-xs text-slate-500 leading-relaxed">Limpieza profunda de quemadores, inyectores y cámaras de combustión para optimizar el consumo.</p>
+                </div>
+                <!-- Ítem -->
+                <div class="service-card bg-white p-8 rounded-3xl border-t-4 border-[#2ECC71]">
+                    <div class="w-14 h-14 bg-slate-50 rounded-2xl flex items-center justify-center mb-6 text-2xl text-[#1E8449]">
+                        <i class="fas fa-fire"></i>
+                    </div>
+                    <h3 class="font-black uppercase text-sm mb-4">Colocación de Artefactos</h3>
+                    <p class="text-xs text-slate-500 leading-relaxed">Instalación certificada de cocinas, calefactores y termotanques respetando ventilaciones reglamentarias.</p>
+                </div>
+                <!-- Ítem -->
+                <div class="service-card bg-white p-8 rounded-3xl border-t-4 border-[#2ECC71]">
+                    <div class="w-14 h-14 bg-slate-50 rounded-2xl flex items-center justify-center mb-6 text-2xl text-[#1E8449]">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3 class="font-black uppercase text-sm mb-4">Pruebas de Hermeticidad</h3>
+                    <p class="text-xs text-slate-500 leading-relaxed">Detección de fugas y ensayos de presión para garantizar la seguridad total de su familia.</p>
+                </div>
+                <!-- Ítem -->
+                <div class="service-card bg-white p-8 rounded-3xl border-t-4 border-[#2ECC71]">
+                    <div class="w-14 h-14 bg-slate-50 rounded-2xl flex items-center justify-center mb-6 text-2xl text-[#1E8449]">
+                        <i class="fas fa-file-invoice"></i>
+                    </div>
+                    <h3 class="font-black uppercase text-sm mb-4">Planos y Trámites</h3>
+                    <p class="text-xs text-slate-500 leading-relaxed">Elaboración de planos técnicos, firmas profesionales y toda la documentación para Camuzzi.</p>
+                </div>
+                <!-- Ítem -->
+                <div class="service-card bg-white p-8 rounded-3xl border-t-4 border-[#2ECC71]">
+                    <div class="w-14 h-14 bg-slate-50 rounded-2xl flex items-center justify-center mb-6 text-2xl text-[#1E8449]">
+                        <i class="fas fa-check-double"></i>
+                    </div>
+                    <h3 class="font-black uppercase text-sm mb-4">Regularizaciones</h3>
+                    <p class="text-xs text-slate-500 leading-relaxed">Adecuación de instalaciones existentes e inspecciones previas para habilitación final.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Llave en Mano -->
+    <section id="llave-en-mano" class="py-24 bg-[#2C3E50] text-white">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="bg-gradient-to-br from-[#1E8449]/20 to-transparent border border-white/10 p-12 rounded-[3rem]">
+                <div class="grid lg:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <h2 class="text-4xl font-black uppercase italic mb-6 leading-tight">🔥 Servicio Integral <br><span class="text-[#2ECC71]">“Llave en Mano”</span></h2>
+                        <p class="text-slate-300 text-lg mb-10 leading-relaxed">
+                            Nos diferenciamos por ofrecer un servicio completo. El cliente recibe una solución terminada, lista para usar y aprobada, sin tener que preocuparse por gestiones intermedias.
+                        </p>
+                        <div class="grid sm:grid-cols-2 gap-y-6">
+                            <div class="flex items-center gap-4">
+                                <i class="fas fa-check-circle text-[#2ECC71] text-xl"></i>
+                                <span class="font-bold text-xs uppercase tracking-widest">Instalación</span>
+                            </div>
+                            <div class="flex items-center gap-4">
+                                <i class="fas fa-check-circle text-[#2ECC71] text-xl"></i>
+                                <span class="font-bold text-xs uppercase tracking-widest">Plano y Firma Prof.</span>
+                            </div>
+                            <div class="flex items-center gap-4">
+                                <i class="fas fa-check-circle text-[#2ECC71] text-xl"></i>
+                                <span class="font-bold text-xs uppercase tracking-widest">Gestión de Trámites</span>
+                            </div>
+                            <div class="flex items-center gap-4">
+                                <i class="fas fa-check-circle text-[#2ECC71] text-xl"></i>
+                                <span class="font-bold text-xs uppercase tracking-widest">Habilitación Final</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-white/5 p-8 rounded-3xl border border-white/10">
+                        <h4 class="font-black uppercase text-[#2ECC71] mb-6 tracking-tighter">📄 Asesoramiento Especializado</h4>
+                        <ul class="space-y-4 text-sm font-medium text-slate-200">
+                            <li class="flex items-start gap-3">
+                                <i class="fas fa-info-circle mt-1 text-[#2ECC71]"></i>
+                                <span>Viviendas sin conexión a gas actual.</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i class="fas fa-info-circle mt-1 text-[#2ECC71]"></i>
+                                <span>Regularización de instalaciones fuera de norma.</span>
+                            </li>
+                            <li class="flex items-start gap-3 font-bold text-[#2ECC71]">
+                                <i class="fas fa-star mt-1"></i>
+                                <span>Acceso a programas como “Llegó el Gas”.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Formulario de Contacto -->
+    <section id="contacto" class="py-24 px-6">
+        <div class="max-w-5xl mx-auto bg-white rounded-[2.5rem] shadow-2xl overflow-hidden border border-slate-100">
+            <div class="grid lg:grid-cols-5">
+                <!-- Info Side -->
+                <div class="lg:col-span-2 bg-[#1E8449] p-12 text-white">
+                    <h2 class="text-4xl font-black uppercase italic mb-8 leading-none">Contacto <br><span class="text-[#2ECC71] text-5xl">Directo.</span></h2>
+                    <p class="text-white/80 text-sm mb-12 italic">"Nuestro objetivo es facilitar todo el proceso, desde el inicio hasta la habilitación final."</p>
+                    
+                    <div class="space-y-8">
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 bg-white/10 rounded-2xl flex items-center justify-center">
+                                <i class="fab fa-whatsapp text-xl"></i>
+                            </div>
+                            <div>
+                                <p class="text-[10px] font-bold uppercase text-[#2ECC71]">WhatsApp Rápido</p>
+                                <p class="font-bold tracking-wider">2901-601196</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 bg-white/10 rounded-2xl flex items-center justify-center">
+                                <i class="fas fa-id-card text-xl"></i>
+                            </div>
+                            <div>
+                                <p class="text-[10px] font-bold uppercase text-[#2ECC71]">Matrícula</p>
+                                <p class="font-bold uppercase text-xs">Categoría 1 - Nacional</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Form Side -->
+                <div class="lg:col-span-3 p-12 bg-slate-50/50">
+                    <form id="gasistaForm" class="space-y-6">
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div class="space-y-2">
+                                <label class="text-[10px] font-black uppercase text-slate-400 tracking-widest ml-1">Nombre y Apellido</label>
+                                <input type="text" id="nombre" required class="w-full bg-white border border-slate-200 px-5 py-4 rounded-xl outline-none input-focus transition-all" placeholder="Juan Pérez">
+                            </div>
+                            <div class="space-y-2">
+                                <label class="text-[10px] font-black uppercase text-slate-400 tracking-widest ml-1">Teléfono</label>
+                                <input type="tel" id="tel" required class="w-full bg-white border border-slate-200 px-5 py-4 rounded-xl outline-none input-focus transition-all" placeholder="2901...">
+                            </div>
+                        </div>
+                        <div class="space-y-2">
+                            <label class="text-[10px] font-black uppercase text-slate-400 tracking-widest ml-1">¿Qué servicio necesitás?</label>
+                            <select id="servicio" required class="w-full bg-white border border-slate-200 px-5 py-4 rounded-xl outline-none input-focus transition-all cursor-pointer">
+                                <option value="" disabled selected>Seleccione una opción...</option>
+                                <option value="Limpieza y Mantenimiento">Limpieza y Mantenimiento de Equipos</option>
+                                <option value="Obra Nueva">Obra Nueva / Instalación</option>
+                                <option value="Habilitación / Planos">Habilitación / Planos Camuzzi</option>
+                                <option value="Regularización">Regularización de Instalación</option>
+                                <option value="Programa Llegó el Gas">Programa "Llegó el Gas"</option>
+                                <option value="Conexión de Artefactos">Conexión de Artefactos</option>
+                                <option value="Fuga de Gas">Urgencia: Fuga de Gas</option>
+                            </select>
+                        </div>
+                        <div class="space-y-2">
+                            <label class="text-[10px] font-black uppercase text-slate-400 tracking-widest ml-1">Mensaje o Dirección</label>
+                            <textarea id="mensaje" rows="4" class="w-full bg-white border border-slate-200 px-5 py-4 rounded-xl outline-none input-focus transition-all" placeholder="Detallá tu consulta aquí..."></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-[#2C3E50] text-white font-black py-5 rounded-2xl hover:bg-[#1E8449] transition-all uppercase tracking-widest text-sm shadow-xl flex items-center justify-center gap-3">
+                            Enviar Solicitud por WhatsApp <i class="fab fa-whatsapp text-[#2ECC71] text-xl"></i>
+                        </button>
+                        <p class="text-center text-[9px] text-slate-400 font-bold uppercase tracking-widest">Respuesta rápida y presupuestos en el día.</p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pie de Página -->
+    <footer class="bg-[#2C3E50] py-16 px-6 text-center">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex items-center justify-center gap-3 mb-8">
+                <div class="bg-[#1E8449] p-1.5 rounded-md">
+                    <i class="fas fa-fire-alt text-white text-lg"></i>
+                </div>
+                <span class="block font-black text-lg leading-none text-white italic tracking-tighter">GASISTA <span class="text-[#2ECC71]">USHUAIA</span></span>
+            </div>
+            <p class="text-white/40 text-[10px] font-bold uppercase tracking-[0.5em] mb-4">Servicios Técnicos Especializados</p>
+            <p class="text-white/20 text-[9px] uppercase tracking-widest">Inscripto en Camuzzi Gas del Sur & AFIP • Ushuaia, Tierra del Fuego</p>
+        </div>
+    </footer>
+
+    <script>
+        // Lógica del Formulario de WhatsApp
+        document.getElementById('gasistaForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const nombre = document.getElementById('nombre').value;
+            const tel = document.getElementById('tel').value;
+            const servicio = document.getElementById('servicio').value;
+            const mensaje = document.getElementById('mensaje').value;
+
+            const text = `*SOLICITUD DE SERVICIO TÉCNICO - WEB*\n\n` +
+                         `*👤 Cliente:* ${nombre}\n` +
+                         `*📞 Tel:* ${tel}\n` +
+                         `*🛠️ Servicio:* ${servicio}\n` +
+                         `*💬 Detalles:* ${mensaje || 'Sin detalles'}\n\n` +
+                         `_Solicitud de presupuesto enviada desde la web._`;
+            
+            const whatsappUrl = `https://wa.me/5492901601196?text=${encodeURIComponent(text)}`;
+            window.open(whatsappUrl, '_blank');
+        });
+    </script>
+</body>
+</html>
