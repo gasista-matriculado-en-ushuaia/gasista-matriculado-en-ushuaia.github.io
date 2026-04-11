@@ -56,6 +56,10 @@
             border-color: #1E8449;
             box-shadow: 0 0 0 3px rgba(30, 132, 73, 0.2);
         }
+
+        .program-badge {
+            background: linear-gradient(90deg, #1E8449 0%, #2ECC71 100%);
+        }
     </style>
 </head>
 <body class="bg-slate-50 text-slate-900">
@@ -93,7 +97,8 @@
             <div class="hidden md:flex gap-8 items-center font-bold text-xs uppercase tracking-widest text-slate-600">
                 <a href="#empresa" class="hover:text-[#1E8449] transition-colors">Nosotros</a>
                 <a href="#servicios" class="hover:text-[#1E8449] transition-colors">Servicios</a>
-                <a href="#llave-en-mano" class="hover:text-[#1E8449] transition-colors">Llave en Mano</a>
+                <a href="#programa-gas" class="text-[#1E8449] hover:text-[#2ECC71] transition-colors">Llegó el Gas</a>
+                <a href="#servicio-integral" class="hover:text-[#1E8449] transition-colors">Servicio Integral</a>
                 <a href="#contacto" class="bg-[#1E8449] text-white px-6 py-3 rounded-full hover:bg-[#2ECC71] transition-all shadow-md">Contacto Rápido</a>
             </div>
         </div>
@@ -101,7 +106,6 @@
 
     <!-- Sección Hero -->
     <header class="hero-gradient min-h-[80vh] flex items-center text-white relative overflow-hidden">
-        <!-- Decoración abstracta de fondo -->
         <div class="absolute top-0 right-0 w-1/2 h-full opacity-10 pointer-events-none">
             <i class="fas fa-tools text-[40rem] rotate-12 translate-x-20"></i>
         </div>
@@ -115,13 +119,15 @@
                     Calor Seguro y <span class="text-[#2ECC71]">Habilitado</span>.
                 </h1>
                 <p class="text-lg text-slate-200 max-w-lg font-light leading-relaxed">
-                    Brindamos soluciones completas según normativa vigente. Nos encargamos de todo para que no tengas que preocuparte por trámites o gestiones ante Camuzzi.
+                    Brindamos soluciones completas según normativa vigente. Nos encargamos de todo para que no tengas que preocuparte por trámites ante Camuzzi.
                 </p>
                 <div class="flex flex-wrap gap-4 pt-4">
                     <a href="#contacto" class="bg-[#2ECC71] text-[#2C3E50] font-black px-8 py-4 rounded-xl shadow-xl hover:scale-105 transition-transform flex items-center gap-3">
                         PEDIR PRESUPUESTO <i class="fas fa-arrow-right"></i>
                     </a>
-                    <a href="#servicios" class="border border-white/30 bg-white/5 backdrop-blur-sm px-8 py-4 rounded-xl font-bold hover:bg-white/10 transition-all">Ver Servicios</a>
+                    <a href="#programa-gas" class="bg-white/10 backdrop-blur-sm border border-white/30 px-8 py-4 rounded-xl font-bold hover:bg-white/20 transition-all flex items-center gap-2">
+                        <i class="fas fa-gas-pump"></i> Llegó el Gas
+                    </a>
                 </div>
             </div>
             
@@ -153,6 +159,52 @@
         </div>
     </header>
 
+    <!-- NUEVA SECCIÓN: LLEGÓ EL GAS -->
+    <section id="programa-gas" class="py-20 bg-white border-b border-slate-100">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="program-badge p-1 rounded-[3rem] shadow-2xl">
+                <div class="bg-white rounded-[2.8rem] p-8 md:p-16 flex flex-col lg:flex-row items-center gap-12">
+                    <div class="lg:w-2/3 space-y-6">
+                        <div class="flex items-center gap-3">
+                            <span class="bg-[#1E8449] text-white px-4 py-1 rounded-full text-[10px] font-black uppercase tracking-widest">Programa Provincial</span>
+                            <span class="text-[#1E8449] font-black uppercase text-xs tracking-tighter">Subsidio de Instalaciones</span>
+                        </div>
+                        <h2 class="text-4xl md:text-6xl font-black text-[#2C3E50] italic uppercase leading-[0.9]">
+                            Trabajamos con el <br> <span class="text-[#1E8449]">Programa</span> <span class="text-[#2ECC71]">"Llegó el Gas"</span>
+                        </h2>
+                        <p class="text-slate-600 text-lg leading-relaxed">
+                            Si sos beneficiario o querés acceder al programa provincial para la red de gas, nosotros realizamos toda la **instalación, gestión y habilitación** bajo los lineamientos del subsidio. 
+                        </p>
+                        <div class="grid sm:grid-cols-2 gap-4">
+                            <div class="flex items-center gap-3 bg-slate-50 p-4 rounded-2xl border border-slate-100">
+                                <i class="fas fa-clipboard-check text-[#1E8449]"></i>
+                                <span class="text-xs font-bold uppercase text-slate-700">Asesoramiento en requisitos</span>
+                            </div>
+                            <div class="flex items-center gap-3 bg-slate-50 p-4 rounded-2xl border border-slate-100">
+                                <i class="fas fa-file-signature text-[#1E8449]"></i>
+                                <span class="text-xs font-bold uppercase text-slate-700">Firma de proyectos aprobados</span>
+                            </div>
+                        </div>
+                        <a href="#contacto" class="inline-flex items-center gap-3 text-[#1E8449] font-black uppercase text-sm hover:translate-x-2 transition-transform">
+                            Consultar por este programa <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                    <div class="lg:w-1/3 relative">
+                        <div class="bg-slate-100 w-full aspect-square rounded-[3rem] flex items-center justify-center relative overflow-hidden">
+                            <i class="fas fa-gas-pump text-[12rem] text-slate-200"></i>
+                            <div class="absolute inset-0 flex items-center justify-center p-8 text-center">
+                                <div>
+                                    <p class="text-[#1E8449] text-5xl font-black mb-2 leading-none">RED DE GAS</p>
+                                    <p class="font-bold text-[#2C3E50] uppercase tracking-widest text-xs italic">Para tu hogar</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Sección Empresa -->
     <section id="empresa" class="py-24 bg-white relative overflow-hidden">
         <div class="max-w-6xl mx-auto px-6 relative z-10">
@@ -176,14 +228,10 @@
                         <li class="flex items-center gap-3 font-bold text-slate-700">
                             <i class="fas fa-check text-[#2ECC71]"></i> Trabajos seguros y habilitados
                         </li>
-                        <li class="flex items-center gap-3 font-bold text-slate-700">
-                            <i class="fas fa-check text-[#2ECC71]"></i> Amplia experiencia en el rubro
-                        </li>
                     </ul>
                 </div>
                 <div class="bg-slate-50 p-10 rounded-[2.5rem] border border-slate-100 shadow-inner">
-                    <h3 class="font-black uppercase text-[#2C3E50] mb-6 tracking-tighter text-xl">Trabajamos con Particulares y Constructoras</h3>
-                    <p class="text-slate-500 mb-8 font-medium">Adaptándonos a cada proyecto con responsabilidad, cumplimiento y rapidez.</p>
+                    <h3 class="font-black uppercase text-[#2C3E50] mb-6 tracking-tighter text-xl text-center">Clientes y Proyectos</h3>
                     <div class="space-y-4">
                         <div class="flex items-center gap-4 bg-white p-5 rounded-2xl shadow-sm border border-slate-100">
                             <div class="w-12 h-12 bg-slate-50 rounded-xl flex items-center justify-center text-[#1E8449]">
@@ -199,9 +247,9 @@
                         </div>
                         <div class="flex items-center gap-4 bg-white p-5 rounded-2xl shadow-sm border border-slate-100">
                             <div class="w-12 h-12 bg-slate-50 rounded-xl flex items-center justify-center text-[#1E8449]">
-                                <i class="fas fa-hard-hat text-xl"></i>
+                                <i class="fas fa-landmark text-xl"></i>
                             </div>
-                            <span class="font-bold text-sm uppercase tracking-wide">Empresas Constructoras</span>
+                            <span class="font-bold text-sm uppercase tracking-wide">Programa "Llegó el Gas"</span>
                         </div>
                     </div>
                 </div>
@@ -264,15 +312,15 @@
         </div>
     </section>
 
-    <!-- Sección Llave en Mano -->
-    <section id="llave-en-mano" class="py-24 bg-[#2C3E50] text-white">
+    <!-- Sección Servicio Integral -->
+    <section id="servicio-integral" class="py-24 bg-[#2C3E50] text-white">
         <div class="max-w-6xl mx-auto px-6">
             <div class="bg-gradient-to-br from-[#1E8449]/20 to-transparent border border-white/10 p-12 rounded-[3rem]">
                 <div class="grid lg:grid-cols-2 gap-12 items-center">
                     <div>
-                        <h2 class="text-4xl font-black uppercase italic mb-6 leading-tight">🔥 Servicio Integral <br><span class="text-[#2ECC71]">“Llave en Mano”</span></h2>
+                        <h2 class="text-4xl font-black uppercase italic mb-6 leading-tight">🔥 Servicio Integral</h2>
                         <p class="text-slate-300 text-lg mb-10 leading-relaxed">
-                            Nos diferenciamos por ofrecer un servicio completo. El cliente recibe una solución terminada, lista para usar y aprobada, sin tener que preocuparse por gestiones intermedias.
+                            Nos diferenciamos por ofrecer un servicio completo. El cliente recibe una solución terminada, lista para usar y aprobada, sin gestiones intermedias.
                         </p>
                         <div class="grid sm:grid-cols-2 gap-y-6">
                             <div class="flex items-center gap-4">
@@ -306,7 +354,7 @@
                             </li>
                             <li class="flex items-start gap-3 font-bold text-[#2ECC71]">
                                 <i class="fas fa-star mt-1"></i>
-                                <span>Acceso a programas como “Llegó el Gas”.</span>
+                                <span>Gestión Integral Programa “Llegó el Gas”.</span>
                             </li>
                         </ul>
                     </div>
@@ -319,13 +367,9 @@
     <section id="contacto" class="py-24 px-6">
         <div class="max-w-5xl mx-auto bg-white rounded-[2.5rem] shadow-2xl overflow-hidden border border-slate-100">
             <div class="grid lg:grid-cols-5">
-                <!-- Info Side -->
                 <div class="lg:col-span-2 bg-[#1E8449] p-12 text-white relative overflow-hidden">
                     <div class="absolute -bottom-10 -left-10 w-40 h-40 bg-white/5 rounded-full blur-3xl"></div>
-                    
                     <h2 class="text-4xl font-black uppercase italic mb-8 leading-none relative z-10">Contacto <br><span class="text-[#2ECC71] text-5xl">Directo.</span></h2>
-                    <p class="text-white/80 text-sm mb-12 italic relative z-10">"Nuestro objetivo es facilitar todo el proceso, desde el inicio hasta la habilitación final."</p>
-                    
                     <div class="space-y-8 relative z-10">
                         <div class="flex items-center gap-4">
                             <div class="w-12 h-12 bg-white/10 rounded-2xl flex items-center justify-center">
@@ -342,13 +386,12 @@
                             </div>
                             <div>
                                 <p class="text-[10px] font-bold uppercase text-[#2ECC71]">Estado Profesional</p>
-                                <p class="font-bold uppercase text-xs">Matriculado Nacional</p>
+                                <p class="font-bold uppercase text-xs">Matriculado</p>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Form Side -->
                 <div class="lg:col-span-3 p-12 bg-slate-50/50">
                     <form id="gasistaForm" class="space-y-6">
                         <div class="grid md:grid-cols-2 gap-6">
@@ -365,11 +408,11 @@
                             <label class="text-[10px] font-black uppercase text-slate-400 tracking-widest ml-1">¿Qué servicio necesitás?</label>
                             <select id="servicio" required class="w-full bg-white border border-slate-200 px-5 py-4 rounded-xl outline-none input-focus transition-all cursor-pointer shadow-sm">
                                 <option value="" disabled selected>Seleccione una opción...</option>
+                                <option value="Programa Llegó el Gas">Programa "Llegó el Gas" (NUEVO)</option>
                                 <option value="Limpieza y Mantenimiento">Limpieza y Mantenimiento de Equipos</option>
                                 <option value="Obra Nueva">Obra Nueva / Instalación</option>
                                 <option value="Habilitación / Planos">Habilitación / Planos Camuzzi</option>
                                 <option value="Regularización">Regularización de Instalación</option>
-                                <option value="Programa Llegó el Gas">Programa "Llegó el Gas"</option>
                                 <option value="Conexión de Artefactos">Conexión de Artefactos</option>
                                 <option value="Fuga de Gas">Urgencia: Fuga de Gas</option>
                             </select>
@@ -381,7 +424,6 @@
                         <button type="submit" class="w-full bg-[#2C3E50] text-white font-black py-5 rounded-2xl hover:bg-[#1E8449] transition-all uppercase tracking-widest text-sm shadow-xl flex items-center justify-center gap-3">
                             Enviar Solicitud por WhatsApp <i class="fab fa-whatsapp text-[#2ECC71] text-xl"></i>
                         </button>
-                        <p class="text-center text-[9px] text-slate-400 font-bold uppercase tracking-widest">Respuesta rápida y presupuestos en el día.</p>
                     </form>
                 </div>
             </div>
@@ -405,7 +447,6 @@
     <script>
         document.getElementById('gasistaForm').addEventListener('submit', function(e) {
             e.preventDefault();
-            
             const nombre = document.getElementById('nombre').value;
             const tel = document.getElementById('tel').value;
             const servicio = document.getElementById('servicio').value;
@@ -416,7 +457,7 @@
                          `*📞 Tel:* ${tel}\n` +
                          `*🛠️ Servicio:* ${servicio}\n` +
                          `*💬 Detalles:* ${mensaje || 'Sin detalles'}\n\n` +
-                         `_Solicitud de presupuesto enviada desde la web._`;
+                         `_Solicitud enviada desde la web._`;
             
             const whatsappUrl = `https://wa.me/5492901601196?text=${encodeURIComponent(text)}`;
             window.open(whatsappUrl, '_blank');
