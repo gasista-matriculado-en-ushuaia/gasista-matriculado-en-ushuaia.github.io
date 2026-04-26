@@ -35,7 +35,7 @@
 
         .service-card:hover {
             transform: translateY(-10px);
-            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 25px 35px -10px rgba(0, 0, 0, 0.15);
         }
 
         .whatsapp-float {
@@ -206,56 +206,80 @@
         </div>
     </section>
 
-    <!-- Cuadrícula de Servicios -->
+    <!-- Cuadrícula de Servicios - Mejorada para Lectura -->
     <section id="servicios" class="py-24 bg-slate-100">
         <div class="max-w-7xl mx-auto px-6">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl font-black text-[#2C3E50] uppercase italic tracking-tighter">🧰 Nuestros Servicios</h2>
-                <p class="text-slate-500 font-bold uppercase text-[10px] tracking-[0.3em] mt-2">Servicio Integral para Gas Domiciliario e Industrial</p>
+            <div class="text-center mb-20">
+                <h2 class="text-4xl md:text-5xl font-black text-[#2C3E50] uppercase italic tracking-tighter">🧰 Nuestros Servicios</h2>
+                <div class="h-1.5 w-32 bg-[#2ECC71] mx-auto mt-4 mb-6"></div>
+                <p class="text-slate-600 font-bold uppercase text-xs md:text-sm tracking-[0.4em]">Soluciones Profesionales en Gas Domiciliario</p>
             </div>
 
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="service-card bg-white p-8 rounded-3xl border-t-4 border-[#2ECC71]">
-                    <div class="w-14 h-14 bg-slate-50 rounded-2xl flex items-center justify-center mb-6 text-2xl text-[#1E8449]">
-                        <i class="fas fa-plus"></i>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+                <!-- Servicio 1 -->
+                <div class="service-card bg-white p-10 rounded-[2.5rem] border-b-8 border-[#2ECC71] shadow-lg">
+                    <div class="w-20 h-20 bg-[#1E8449]/10 rounded-3xl flex items-center justify-center mb-8 text-4xl text-[#1E8449]">
+                        <i class="fas fa-plus-circle"></i>
                     </div>
-                    <h3 class="font-black uppercase text-sm mb-4">Instalaciones Nuevas</h3>
-                    <p class="text-xs text-slate-500 leading-relaxed">Diseño y ejecución de cañerías para obras desde cero con materiales aprobados y conexión a red.</p>
+                    <h3 class="font-black uppercase text-xl md:text-2xl text-[#2C3E50] mb-5 leading-tight italic">Instalaciones Nuevas</h3>
+                    <p class="text-slate-600 text-base md:text-lg leading-relaxed font-medium">
+                        Diseño y ejecución de cañerías para obras desde cero con materiales aprobados y conexión a red oficial.
+                    </p>
                 </div>
-                <div class="service-card bg-white p-8 rounded-3xl border-t-4 border-[#2ECC71]">
-                    <div class="w-14 h-14 bg-slate-50 rounded-2xl flex items-center justify-center mb-6 text-2xl text-[#1E8449]">
-                        <i class="fas fa-broom"></i>
+
+                <!-- Servicio 2 -->
+                <div class="service-card bg-white p-10 rounded-[2.5rem] border-b-8 border-[#2ECC71] shadow-lg">
+                    <div class="w-20 h-20 bg-[#1E8449]/10 rounded-3xl flex items-center justify-center mb-8 text-4xl text-[#1E8449]">
+                        <i class="fas fa-magic"></i>
                     </div>
-                    <h3 class="font-black uppercase text-sm mb-4">Limpieza y Mantenimiento</h3>
-                    <p class="text-xs text-slate-500 leading-relaxed">Limpieza profunda de quemadores, inyectores y cámaras de combustión para optimizar el consumo.</p>
+                    <h3 class="font-black uppercase text-xl md:text-2xl text-[#2C3E50] mb-5 leading-tight italic">Limpieza y Service</h3>
+                    <p class="text-slate-600 text-base md:text-lg leading-relaxed font-medium">
+                        Limpieza profunda de quemadores e inyectores para optimizar el consumo y mejorar la seguridad de sus equipos.
+                    </p>
                 </div>
-                <div class="service-card bg-white p-8 rounded-3xl border-t-4 border-[#2ECC71]">
-                    <div class="w-14 h-14 bg-slate-50 rounded-2xl flex items-center justify-center mb-6 text-2xl text-[#1E8449]">
+
+                <!-- Servicio 3 -->
+                <div class="service-card bg-white p-10 rounded-[2.5rem] border-b-8 border-[#2ECC71] shadow-lg">
+                    <div class="w-20 h-20 bg-[#1E8449]/10 rounded-3xl flex items-center justify-center mb-8 text-4xl text-[#1E8449]">
                         <i class="fas fa-fire"></i>
                     </div>
-                    <h3 class="font-black uppercase text-sm mb-4">Colocación de Artefactos</h3>
-                    <p class="text-xs text-slate-500 leading-relaxed">Instalación certificada de cocinas, calefactores y termotanques respetando ventilaciones reglamentarias.</p>
+                    <h3 class="font-black uppercase text-xl md:text-2xl text-[#2C3E50] mb-5 leading-tight italic">Colocación Artefactos</h3>
+                    <p class="text-slate-600 text-base md:text-lg leading-relaxed font-medium">
+                        Instalación certificada de cocinas, calefactores y termotanques respetando ventilaciones reglamentarias.
+                    </p>
                 </div>
-                <div class="service-card bg-white p-8 rounded-3xl border-t-4 border-[#2ECC71]">
-                    <div class="w-14 h-14 bg-slate-50 rounded-2xl flex items-center justify-center mb-6 text-2xl text-[#1E8449]">
-                        <i class="fas fa-shield-alt"></i>
+
+                <!-- Servicio 4 -->
+                <div class="service-card bg-white p-10 rounded-[2.5rem] border-b-8 border-[#2ECC71] shadow-lg">
+                    <div class="w-20 h-20 bg-[#1E8449]/10 rounded-3xl flex items-center justify-center mb-8 text-4xl text-[#1E8449]">
+                        <i class="fas fa-search-location"></i>
                     </div>
-                    <h3 class="font-black uppercase text-sm mb-4">Pruebas de Hermeticidad</h3>
-                    <p class="text-xs text-slate-500 leading-relaxed">Detección de fugas y ensayos de presión para garantizar la seguridad total de su familia.</p>
+                    <h3 class="font-black uppercase text-xl md:text-2xl text-[#2C3E50] mb-5 leading-tight italic">Pruebas de Fugas</h3>
+                    <p class="text-slate-600 text-base md:text-lg leading-relaxed font-medium">
+                        Ensayos de hermeticidad y presión para garantizar la seguridad total de su familia y evitar accidentes.
+                    </p>
                 </div>
-                <div class="service-card bg-white p-8 rounded-3xl border-t-4 border-[#2ECC71]">
-                    <div class="w-14 h-14 bg-slate-50 rounded-2xl flex items-center justify-center mb-6 text-2xl text-[#1E8449]">
-                        <i class="fas fa-file-invoice"></i>
+
+                <!-- Servicio 5 -->
+                <div class="service-card bg-white p-10 rounded-[2.5rem] border-b-8 border-[#2ECC71] shadow-lg">
+                    <div class="w-20 h-20 bg-[#1E8449]/10 rounded-3xl flex items-center justify-center mb-8 text-4xl text-[#1E8449]">
+                        <i class="fas fa-file-signature"></i>
                     </div>
-                    <h3 class="font-black uppercase text-sm mb-4">Planos y Trámites</h3>
-                    <p class="text-xs text-slate-500 leading-relaxed">Elaboración de planos técnicos, firmas profesionales y toda la documentación para Camuzzi.</p>
+                    <h3 class="font-black uppercase text-xl md:text-2xl text-[#2C3E50] mb-5 leading-tight italic">Planos y Trámites</h3>
+                    <p class="text-slate-600 text-base md:text-lg leading-relaxed font-medium">
+                        Elaboración de planos técnicos, firmas profesionales y gestión de toda la documentación ante Camuzzi.
+                    </p>
                 </div>
-                <div class="service-card bg-white p-8 rounded-3xl border-t-4 border-[#2ECC71]">
-                    <div class="w-14 h-14 bg-slate-50 rounded-2xl flex items-center justify-center mb-6 text-2xl text-[#1E8449]">
-                        <i class="fas fa-check-double"></i>
+
+                <!-- Servicio 6 -->
+                <div class="service-card bg-white p-10 rounded-[2.5rem] border-b-8 border-[#2ECC71] shadow-lg">
+                    <div class="w-20 h-20 bg-[#1E8449]/10 rounded-3xl flex items-center justify-center mb-8 text-4xl text-[#1E8449]">
+                        <i class="fas fa-clipboard-check"></i>
                     </div>
-                    <h3 class="font-black uppercase text-sm mb-4">Regularizaciones</h3>
-                    <p class="text-xs text-slate-500 leading-relaxed">Adecuación de instalaciones existentes e inspecciones previas para habilitación final.</p>
+                    <h3 class="font-black uppercase text-xl md:text-2xl text-[#2C3E50] mb-5 leading-tight italic">Regularizaciones</h3>
+                    <p class="text-slate-600 text-base md:text-lg leading-relaxed font-medium">
+                        Adecuación de instalaciones existentes e inspecciones previas para obtener la habilitación final sin problemas.
+                    </p>
                 </div>
             </div>
         </div>
